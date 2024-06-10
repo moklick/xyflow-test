@@ -1,5 +1,13 @@
 # @xyflow/react
 
+## 12.0.0
+
+### Patch Changes
+
+- [#4](https://github.com/moklick/xyflow-test/pull/4) [`5c9e208`](https://github.com/moklick/xyflow-test/commit/5c9e20890f53108b3b46e3426838501782d72542) Thanks [@moklick](https://github.com/moklick)! - readme update
+
+- [#1](https://github.com/moklick/xyflow-test/pull/1) [`ad400c5`](https://github.com/moklick/xyflow-test/commit/ad400c5e43161041cfb30b02647cd08d7bb05c00) Thanks [@moklick](https://github.com/moklick)! - test gdxg
+
 ## 12.0.0-next.19
 
 - update internals on node resizer updates
@@ -25,7 +33,7 @@
 - return user node in node event handlers
 - cleanup `useReactFlow`
 - export `KeyCode` and `Align` type
-- remove `Instance` in favour of `ReactFlowInstance` type 
+- remove `Instance` in favour of `ReactFlowInstance` type
 
 ## 12.0.0-next.16
 
@@ -63,7 +71,7 @@
 
 - rename `node.parentNode` to `node.parentId`
 - rename node.computed to node.measured
-- remove positionAbsolute from `node.computed` 
+- remove positionAbsolute from `node.computed`
 
 ## Minor Changes
 
