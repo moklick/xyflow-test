@@ -29,7 +29,6 @@ jobs:
       - name: Create release PR or publish to npm
         id: changesets
         uses: changesets/action@v1
-        title: Version packages
         with:
           publish: pnpm release
         env:
