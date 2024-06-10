@@ -1,5 +1,11 @@
 # @xyflow/react
 
+## 12.0.1
+
+### Patch Changes
+
+- [#7](https://github.com/moklick/xyflow-test/pull/7) [`a782b20`](https://github.com/moklick/xyflow-test/commit/a782b20d4de44c0b5f2f91b346bdd6df827f4607) Thanks [@moklick](https://github.com/moklick)! - test feat
+
 ## 12.0.0
 
 ### Patch Changes
