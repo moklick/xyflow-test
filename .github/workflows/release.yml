@@ -28,7 +28,7 @@ jobs:
 
       - name: Create release PR or publish to npm
         id: changesets
-        uses: changesets/action@v1
+        uses: moklick/changeset-action@v1
         with:
           publish: pnpm release
           title: Release packages
