@@ -7,5 +7,12 @@
   "access": "restricted",
   "baseBranch": "main",
   "updateInternalDependencies": "patch",
-  "ignore": ["svelte-examples"]
+  "ignore": [
+    "svelte-examples",
+    "react-examples",
+    "astro-examples",
+    "@xyflow/eslint-config",
+    "@xyflow/rollup-config",
+    "@xyflow/tsconfig"
+  ]
 }
