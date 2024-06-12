@@ -1,5 +1,11 @@
 # @xyflow/svelte
 
+## 0.1.5
+
+### Patch Changes
+
+- [#11](https://github.com/moklick/xyflow-test/pull/11) [`567726c`](https://github.com/moklick/xyflow-test/commit/567726c9771db878a2faca46305e4dd9607f7998) Thanks [@moklick](https://github.com/moklick)! - some test message
+
 ## 0.1.4
 
 - add `selectable`, `deletable` and `draggable` to node and edge props
@@ -7,7 +13,7 @@
 - add `on:edgemouseenter` and `on:edgemouseleave` event handler
 - fix deselection of edges
 - remove pointer events from panel when user selection is active
-- fix viewport initialization with user viewport 
+- fix viewport initialization with user viewport
 - fix parent node lookup in `evaluateAbsolutePosition`- thanks @lcsfort
 
 ## 0.1.3
@@ -31,16 +37,16 @@ This is a bigger update for Svelte Flow to keep up with the latest changes we ma
 - rename `node.computed` to `node.measured` - this attribute only includes `width` and `height` and no `positionAbsolute` anymore. For this we added the helpers `getInternalNode` and `useInternalNode`
 - rename `node.parentNode` to `node.parentId`
 
-### More updates: 
+### More updates:
 
 - add `isValidConnection` for `<Handle />` component
 - add `fitViewOptions` for `<Controls />` component
 - add `getInternalNode` to `useSvelteFlow`
 - add `useInternalNode` hook
-- don't reset nodes and edges when svelte flow unmounts - thanks @darabos 
+- don't reset nodes and edges when svelte flow unmounts - thanks @darabos
 - fix node event types - thanks @RedPhoenixQ
 - make handleId and isTarget reactive - thanks @darabos
-- fix MiniMap interaction for touch devices 
+- fix MiniMap interaction for touch devices
 - fix pane: pinch zoom on windows
 - fix nodes: return user node in node event handlers
 
