@@ -33,7 +33,7 @@ jobs:
         with:
           github-token: ${{ secrets.PAT }}
           script: |
-            await github.rest.actions.createworkflowDispatch({
+            await github.rest.actions.createWorkflowDispatch({
               owner: 'moklick',
               repo: 'test-target',
               workflow_id: 'version-update.yml',
