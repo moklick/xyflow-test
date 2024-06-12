@@ -33,7 +33,7 @@ jobs:
         with:
           github-token: ${{ secrets.PAT }}
           script: |
-            await github.rest.actions.createDispatchEvent({
+            await github.rest.repos.createDispatchEvent({
               owner: 'moklick',
               repo: 'test-target',
               event_type: 'version_update',
