@@ -28,7 +28,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: trigger workflows
-        if: steps.changesets.outputs.published == 'true'
+        #if: steps.changesets.outputs.published == 'true'
         uses: actions/github-script@v7
         with:
           github-token: ${{ secrets.PAT }}
