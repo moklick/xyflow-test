@@ -9,6 +9,8 @@ runs:
     # - name: Typecheck
     #   run: pnpm typecheck
     #   shell: bash
+    # - name: Install Playwright browsers
+    #   run: npx playwright install --with-deps
     # - name: Test React Flow
     #   run: pnpm test:react
     #   shell: bash
