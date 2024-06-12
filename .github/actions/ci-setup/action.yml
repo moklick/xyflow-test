@@ -1,9 +1,7 @@
 name: 'CI setup'
+
 runs:
   using: 'composite'
-  strategy:
-    matrix:
-      node-version: [20]
   steps:
     - name: Setup pnpm
       uses: pnpm/action-setup@v4
