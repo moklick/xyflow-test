@@ -14,17 +14,8 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
-
-      - name: Setup node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20.x
-
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-
-      - name: Install dependencies
-        run: pnpm install
+      - uses: ./.github/actions/ci-setup
+      - uses: ./.github/actions/ci-checks
 
       - name: Create release PR or publish to npm
         id: changesets
@@ -35,3 +26,19 @@ jobs:
           commit: 'chore(packages): bump'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: trigger workflows
+        if: steps.changesets.outputs.published == 'true'
+        - uses: actions/github-script@v7
+        with:
+            github-token: ${{ secrets.PAT }}
+            script: |
+              await github.rest.actions.createworkflowDispatch({
+                owner: 'moklick',
+                repo: 'test-target',
+                workflow_id: 'version-update.yml',
+                ref: 'main',
+                inputs: {
+                  message: ${{ steps.changesets.outputs }}
+                }
+              })         

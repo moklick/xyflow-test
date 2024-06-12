@@ -2,6 +2,7 @@
   "name": "playwright",
   "version": "1.0.0",
   "description": "",
+  "private": true,
   "main": "index.js",
   "scripts": {
     "test:svelte": "FRAMEWORK=svelte npx playwright test -c playwright.svelte.config.ts",
@@ -11,7 +12,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@playwright/test": "^1.42.1",
     "@types/node": "^18.7.16"
