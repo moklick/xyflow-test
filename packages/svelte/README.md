@@ -16,6 +16,8 @@ Svelte Flow is a highly customizable component for building interactive graphs a
 
 ## Key Features
 
+something
+
 - **Easy to use:** Seamless zooming and panning, single- and multi selection of graph elements and keyboard shortcuts are supported out of the box
 - **Customizable:** Different [node](https://svelteflow.dev/examples) and [edge types](https://svelteflow.dev/examples/edges/edge-types) and support for custom nodes with multiple handles and custom edges
 - **Fast rendering:** Only nodes that have changed are re-rendered
