@@ -30,15 +30,15 @@ jobs:
       - name: trigger workflows
         if: steps.changesets.outputs.published == 'true'
         uses: actions/github-script@v7
-          with:
-            github-token: ${{ secrets.PAT }}
-            script: |
-              await github.rest.actions.createworkflowDispatch({
-                owner: 'moklick',
-                repo: 'test-target',
-                workflow_id: 'version-update.yml',
-                ref: 'main',
-                inputs: {
-                  message: ${{ steps.changesets.outputs }}
-                }
-              })
+        with:
+          github-token: ${{ secrets.PAT }}
+          script: |
+            await github.rest.actions.createworkflowDispatch({
+              owner: 'moklick',
+              repo: 'test-target',
+              workflow_id: 'version-update.yml',
+              ref: 'main',
+              inputs: {
+                message: ${{ steps.changesets.outputs }}
+              }
+            })
